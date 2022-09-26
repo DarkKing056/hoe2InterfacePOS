@@ -12,7 +12,7 @@ public class NumberTester {
     public NumberTester(String fileName){
 
     }
-    public void setOddEvenTeseter(NumberTest oddTester){
+    public void setOddEvenTester(NumberTest oddTester){
         this.oddTester=oddTester;
     }
 
@@ -35,7 +35,7 @@ public class NumberTester {
                 }
                 if (numbers.length == 2) {
                     switch (numbers[0]){
-                        case 1:break;
+                        case 1:oddTester.testNumber(numbers[1]);break;
                         case 2:break;
                         case 3:break;
                     }
@@ -45,4 +45,6 @@ public class NumberTester {
             throw new RuntimeException(e);
         }
     }
+
+
 }

@@ -1,5 +1,11 @@
-public class Main {
+public class Main{
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        NumberTester numberTester=new NumberTester("saveDatei.txt");
+
+
+        numberTester.setOddEvenTester((n)->n%2==0);
+        
     }
+
+
 }
