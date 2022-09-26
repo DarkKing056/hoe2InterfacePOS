@@ -17,7 +17,13 @@ public class Main{
         });
 
         numberTester.setPalindromeTester((n)->{
-            return true;
+            String str=String.valueOf(n);
+            StringBuilder sb=new StringBuilder(str);
+            sb.reverse();
+            String rev=sb.toString();
+            if(str.equals(rev)){
+                return true;
+            }else{ return false;}
         });
 
         numberTester.testFile();
