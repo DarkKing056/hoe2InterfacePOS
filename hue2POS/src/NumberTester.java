@@ -34,20 +34,20 @@ public class NumberTester {
                 if (numbers.length == 2) {
                     switch (numbers[0]){
                         case 1:if(oddTester.testNumber(numbers[1])){
-                            System.out.println("Die Zahl "+numbers[1]+" ist Gerade!");
+                            System.out.println("ODD");
                         }else {
-                            System.out.println("Die Zahl "+numbers[1]+" ist nicht Gerade!");
+                            System.out.println("NO ODD");
                         }break;
                         case 2:if(primeTester.testNumber(numbers[1])){
-                            System.out.println("Die Zahl "+numbers[1]+" ist eine Primzahl!");
+                            System.out.println("PRIME");
                         }else {
-                            System.out.println("Die Zahl "+numbers[1]+" ist keine Primzahl!");
+                            System.out.println("NO PRIME");
                         };break;
                         case 3:if(palindromeTester.testNumber(numbers[1]))
                             {
-                                System.out.println("Die Zahl "+numbers[1]+" ist eine Palindrome!");
+                                System.out.println("PALINDROME");
                             }else {
-                                System.out.println("Die Zahl "+numbers[1]+" ist keine Palindrome!");
+                                System.out.println("NO PALINDROME");
 
                         }break;
                     }
