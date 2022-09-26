@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class NumberTester {
     private NumberTest oddTester;
     private NumberTest primeTester;
-    private Object palindromeTester;
+    private NumberTest palindromeTester;
 
     private String fileName;
 
@@ -36,8 +36,8 @@ public class NumberTester {
                 if (numbers.length == 2) {
                     switch (numbers[0]){
                         case 1:oddTester.testNumber(numbers[1]);break;
-                        case 2:break;
-                        case 3:break;
+                        case 2:primeTester.testNumber(numbers[1]);break;
+                        case 3:palindromeTester.testNumber(numbers[1]);break;
                     }
                 }
             }
