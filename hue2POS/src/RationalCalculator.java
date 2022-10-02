@@ -5,8 +5,7 @@ public class RationalCalculator extends AbstractCalculator{
         }, (a,b)->{
             return new Number(a.getA()*b.getB()-(b.getA()*a.getB()),a.getB()*b.getB());
         }, (a,b)->{return new Number(a.getA()*b.getA(),a.getB()*b.getB());},
-                (a,b)->
-                    new Number(a.getA() * b.getB(), a.getB() * a.getA()));
+                (a,b)-> new Number(a.getA() * b.getB(), a.getB() * a.getA()));
     }
 
     @Override
